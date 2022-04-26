@@ -7,7 +7,7 @@ locals {
 }
 
 resource "aws_spot_fleet_request" "fleet-request" {
-  iam_fleet_role      = "arn:aws:iam::085711051953:role/aws-ec2-spot-fleet-tagging-role"
+  iam_fleet_role      = "arn:aws:iam::1029846292:role/aws-ec2-spot-fleet-tagging-role"
   target_capacity     = 1
   valid_until         = "2023-07-13T00:00:00Z"
   allocation_strategy = "lowestPrice"
